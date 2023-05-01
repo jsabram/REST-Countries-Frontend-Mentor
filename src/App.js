@@ -9,7 +9,7 @@ import './assets/dark-mode.css';
 
 const router = createBrowserRouter([
 	{
-		path: '/REST-API-Countries-Frontend-Mentor/',
+		path: '/',
 		element: <RootLayout />,
 		id: 'root-page',
 		loader: countriesLoader,
