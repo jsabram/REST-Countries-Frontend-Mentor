@@ -50,7 +50,7 @@ const CountriesList = () => {
 						id={country.cca2}
 						name={country.name.common}
 					>
-						<Link to={`/details/:${country.cca2}`} className={classes['country-link']}>
+						<Link to={`/REST-Countries-Frontend-Mentor/details/:${country.cca2}`} className={classes['country-link']}>
 							<div className={classes['country-flag']}>
 								<img src={country.flags.png} alt={country.flags.alt} />
 							</div>

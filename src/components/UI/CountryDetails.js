@@ -65,7 +65,7 @@ const CountryDetails = () => {
 				<h3>Border Countries:</h3>
 				<div className={classes['border-countries']}>
 					{filteredCountries.map((country) => (
-						<Link to={`/details/:${country.cca2}`}>{country.name.common}</Link>
+						<Link to={`/REST-Countries-Frontend-Mentor/details/:${country.cca2}`}>{country.name.common}</Link>
 					))}
 				</div>
 			</div>

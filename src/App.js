@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 				element: <CountriesListPage />,
 			},
 			{
-				path: '/details/:countryId',
+				path: '/REST-Countries-Frontend-Mentor/details/:countryId',
 				element: <CountryDetailsPage />,
 			},
 			{
