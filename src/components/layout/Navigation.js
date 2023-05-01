@@ -9,7 +9,7 @@ const Navigation = () => {
 
 	let navContent;
 
-	if (activePath.pathname === '/') {
+	if (activePath.pathname === '/REST-Countries-Frontend-Mentor') {
 		navContent = <SearchBar />;
 	} else {
 		navContent = <PreviousPage />;
