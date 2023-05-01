@@ -3,7 +3,7 @@ import classes from './PreviousPage.module.css';
 
 const PreviousPage = () => {
 	return (
-		<Link to='..' className={classes.link}>
+		<Link to='/REST-API-Countries-Frontend-Mentor/' className={classes.link}>
 			<i class='fa-solid fa-arrow-left'></i>
 			Back
 		</Link>
