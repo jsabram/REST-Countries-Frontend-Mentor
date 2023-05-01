@@ -1,0 +1,48 @@
+.animation-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.loading-item {
+	position: relative;
+	width: 300px;
+	height: 416px;
+	margin: 1.5em;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.loading-item::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 20%;
+	background-color: #dddddd;
+	transform: translatex(-300%) skewX(30deg);
+	animation: slide 1s infinite;
+	content: '';
+	opacity: 0.3;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(-300%) skewX(30deg);
+	}
+	to {
+		transform: translateX(700%) skewX(30deg);
+	}
+}
+
+@media (min-width: 1400px) {
+	.animation-box {
+		justify-content: space-between;
+	}
+
+	.loading-item {
+		margin: 3em 0;
+	}
+}

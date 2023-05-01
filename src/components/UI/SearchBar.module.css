@@ -1,0 +1,42 @@
+.input-box {
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	padding: 1em;
+	margin-bottom: 2.5em;
+}
+
+.icon {
+	width: 15%;
+	text-align: center;
+}
+
+input {
+	width: 85%;
+	border: none;
+	outline: none;
+	padding: 0 1em;
+}
+
+select {
+	padding: 1em 2em 1em 1em;
+	border: none;
+	border-right: 1em solid transparent;
+	border-radius: 0.5rem;
+	outline: none;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.search-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.input-box {
+		width: 500px;
+		margin: 0;
+	}
+}

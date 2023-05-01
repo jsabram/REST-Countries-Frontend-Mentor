@@ -1,0 +1,45 @@
+@import './colors.css';
+
+.light header,
+.light nav,
+.light main,
+.light footer,
+.light a,
+.light span {
+	color: var(--light-mode-text);
+}
+
+.light nav,
+.light main,
+.light footer {
+	background: var(--light-mode-bg);
+}
+
+.light input::placeholder,
+.light p {
+	color: var(--light-input-placeholder);
+}
+
+.light header,
+.light span,
+.light select,
+.light a,
+.light li,
+.light #loading-item {
+	background: var(--dark-mode-text);
+	box-shadow: 2px 9px 27px -11px var(--light-input-placeholder);
+}
+
+.light a:hover {
+	background: var(--light-mode-hover);
+	border: 1px solid var(--light-mode-hover);
+}
+
+.light header button::before,
+.light a::before {
+	background: var(--light-mode-text);
+}
+
+.light #dot {
+	background: var(--light-input-placeholder);
+}

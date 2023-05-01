@@ -1,0 +1,47 @@
+@import './colors.css';
+
+.dark header,
+.dark nav,
+.dark main,
+.dark footer,
+.dark a,
+.dark button,
+.dark input,
+.dark select,
+.dark span {
+	color: var(--dark-mode-text);
+}
+
+.dark nav,
+.dark main,
+.dark footer {
+	background: var(--dark-mode-bg);
+}
+
+.dark header,
+.dark span,
+.dark input,
+.dark select,
+.dark a,
+.dark li,
+.dark #loading-item {
+	background: var(--dark-mode-elements);
+	box-shadow: 2px 9px 27px -11px var(--light-mode-text);
+}
+
+.dark input::placeholder,
+.dark p {
+	color: var(--dark-input-placeholder);
+}
+
+.dark a:hover {
+	background: var(--dark-mode-hover);
+	border: 1px solid var(--dark-mode-hover);
+}
+
+.dark header button::before,
+.dark a::before {
+	background: var(--dark-mode-text);
+}
+
+

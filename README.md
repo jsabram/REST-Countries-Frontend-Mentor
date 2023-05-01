@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project was mainly about fetching and extracting data from REST API and then converting it to a list of countries. The list can be filtered in two ways: by the country name and the region where it is located. The filtering can be performed simultaneously. Once a user click on one of the countries, they will be forwarded to another page which shows more detailed information. If a country has border coutries, a list of them will be rendered at the end of the information section and the user also can click on them to be forwarded to that country details page.
 
-### `npm test`
+The user can switch between two themes: light and dark, by clicking on the theme button on the top right corner of the page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+While the data is being fetched, a fallback loading UI is rendered to show the user that something is happeing behind the scenes.
 
-### `npm run build`
+There is also an error page which content is depended on the type of the error. If the data has failed to be fetched, a new Response is thrown and it contains an error code of status 500. If this status is present, the provided feedback will say that retrieving the data was not successful. However, if the user tries to enter a path that does not exist, the error will say that it was unable to access the page and the user can go back to the homepage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was built with React.js, React Router and Redux Toolkit. The data is fetched from REST API (https://restcountries.com/). Other concepts that were used while building this project were Responsive Web Design and Mobile-First Workflow as well as semantic and accessible markup.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### The challenge
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Basic functionalities:
 
-### `npm run eject`
+- displaying all countries fetched from the API on the main page
+- searching for a country using by entering a country name in the input field
+- filtering countries by region using the dropdown list
+- clicking on a country will forward the user to a separate page which contains more detailed information about the country
+- the user can click through the border countries (if they are present) on the country details page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Additional functionalities:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- toggling the color scheme between light and dark
+- loading page - I have used setTimeout to slow down receiving data from the loader() function in order to show a loading page component in the UI
+- error page - will be displayed if user tries to access an invalid path or if the data has failed to be fetched, feedback provided on the error page is different in those two cases
+- if a country does not have any border countries, this segment simply will not be rendered
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Screenshot
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Homepage light mode screenshot:
+![](./src/screenshots/REST-countries-light-mode.png)
 
-## Learn More
+Homepage dark mode screenshot:
+![](./src/screenshots/REST-countries-dark-mode.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Country details page light mode:
+![](./src/screenshots/REST-countries-light-mode-details.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Country details page dark mode:
+![](./src/screenshots/REST-countries-dark-mode-details.png)
 
-### Code Splitting
+Error page light mode:
+![](./src/screenshots/REST-countries-light-mode-error.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Error page dark mode:
+![](./src/screenshots/REST-countries-dark-mode-error.png)
 
-### Analyzing the Bundle Size
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- semantic HTML 5 markup
+- CSS modules
+- JavaScript
+- React.js
+- React Redux Toolkit
+- React Router
+- REST API
+- Mobile-first workflow
+- RWD
 
-### Making a Progressive Web App
+### What I learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I've picked up this project to revise some major concepts of Redux, React Router and REST API. It was also a great project to practice filtering and sorting items that are being rendred on the page.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub - [@jsabram](https://github.com/jsabram)
+- Frontend Mentor - [@jsabram](https://www.frontendmentor.io/profile/jsabram)

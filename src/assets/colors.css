@@ -1,0 +1,11 @@
+:root {
+	--dark-mode-elements: hsl(209, 23%, 22%);
+	--dark-mode-bg: hsl(207, 26%, 17%);
+	--dark-mode-text: hsl(0, 0%, 100%);
+	--dark-input-placeholder: hsl(0, 0%, 82%);
+	--dark-mode-hover: hsl(208, 23%, 33%);
+	--light-mode-text: hsl(200, 15%, 8%);
+	--light-mode-bg: hsl(0, 0%, 98%);
+	--light-input-placeholder: hsl(0, 0%, 52%);
+	--light-mode-hover: hsl(0, 0%, 93%);
+}
